@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <title>首页</title>
+    <script src="js/app.js?v=1.1.0"></script>
+    <style>
+    	.display-hidden {
+	  display: none !important;
+	}
+    	.main-left{
+		/*height: 100%;*/
+		float: left;
+		/*margin-right: 10px;*/
+	}
+	.main-right{
+        display: -webkit-box;
+	    overflow: hidden;
+	    white-space: normal!important;
+	    text-overflow: ellipsis;
+	    word-wrap: break-word;
+	    /*-webkit-line-clamp: 2;*/
+	    -webkit-box-orient: vertical;
+	}
+    </style>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body style="background-image: url(img/hnjh_bg.png);background-size: 100% auto;">
+	<div id="mask" class="display-hidden" style="position: absolute;max-width: 850px;top: 0;bottom: 0;width: 100%;opacity: 0.3;background-color: black;z-index: 997;"></div>
+	<div id="guize" class="display-hidden" style="position: absolute;top: 50%;left:50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);width: 7rem;z-index: 999;">
+		<div style="position: relative;">
+			<img src="img/hnjh_tanchuang_bg.png" style="width: 100%;border-radius: 0.3rem;"/>
+			<img id="guanbi" src="img/hnjh_tanchuang_x.png" style="position: absolute;width: 0.7rem;right: 0.5rem; top: 0.5rem;"/>
+			<div style="position: absolute;font-size: 0.3rem;font-family: fangzhengyinlian;top: 1rem;width: 100%;box-sizing: border-box;padding: 0 0.5rem;">
+				<div style="color: #495ba8; background-color: white;display: inline-block;padding: 0.1rem 0.2rem;border-radius: 0.2rem;letter-spacing: 0.04rem;">活动规则</div>
+				<div style="margin-top:0.3rem;font-size: 0.3rem;color: white;letter-spacing: 0.04rem;line-height: 1.5;"><span class="main-left">1、</span><span class="main-right">活动时间2018年9月21日-2018年9月26日。</span></div>
+				<div style="margin-top:0.3rem;font-size: 0.3rem;color: white;letter-spacing: 0.04rem;line-height: 1.5;"><span class="main-left">2、</span><span class="main-right">参与画月亮活动，画好后将会由AI系统智能打分，看看你到底能画出什么样的圆来吧！</span></div>
+				<div style="margin-top:0.3rem;font-size: 0.3rem;color: white;letter-spacing: 0.04rem;line-height: 1.5;"><span class="main-left">3、</span><span class="main-right">所有参与画圆活动者都将获得中秋特惠惊喜！</span></div>
+			</div>
+		</div>
+	</div>
+	<img src="img/hnjh_logo.png" style="width: 4.3rem; margin-top: 0.6rem; margin-left:0;"/>
+	<div style="text-align: center; position: relative;">
+		<img src="img/hnjh_title.png" style="width: 4.5rem; margin-top: 1rem; text-align: center; display: inline-block;padding-left: 0.5rem;"/>
+	</div>
+	<div style="font-family: fangzhengyinlian; margin-top:1.1rem;font-size: 0.3rem; letter-spacing:0.04rem;color: white;text-align:center;">水是故乡美，月是故乡圆。</div>
+	<div style="font-family: fangzhengyinlian; margin-top:0.15rem;font-size: 0.3rem; letter-spacing:0.04rem;color: white;text-align:center;">中秋节快到了，</div>
+	<div style="font-family: fangzhengyinlian; margin-top:0.15rem;font-size: 0.3rem; letter-spacing:0.04rem;color: white;text-align:center;">听说只要月亮画得圆，</div>
+	<div style="font-family: fangzhengyinlian; margin-top:0.15rem;font-size: 0.3rem;letter-spacing:0.04rem;color: white;text-align:center;">离家的距离就会近一步。</div>
+	<div style="font-family: fangzhengyinlian; margin-top:0.15rem;font-size: 0.3rem;letter-spacing:0.04rem;color: white;text-align:center;">快来给团圆兔助力吧，</div>
+	<div style="font-family: fangzhengyinlian; margin-top:0.15rem;font-size: 0.3rem;letter-spacing:0.04rem;color: white;text-align:center;">送它回到月宫，</div>
+	<div style="font-family: fangzhengyinlian; margin-top:0.15rem;font-size: 0.3rem;letter-spacing:0.04rem;color: white;text-align:center;">小兔兔将会送你小惊喜<img src="img/hnjh_aixin.png" style="width: 0.28rem;"/>哦~</div>
+	<div style="text-align: center;position: fixed; bottom: 0.5rem; width: 100%;">
+		<div style="width: 100%;text-align: center; position: relative;">
+		<img id="tuzi" src="img/hnjh_anniu.png" style="width: 4.3rem;" />
+		<div id="oktext" style="font-family:fangzhengyinlian;color: white;position: absolute;font-size: 0.4rem;width: 100%;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);letter-spacing:0.04rem;">点击画圆 >></div>
+		<img src="img/hnjh_tuzi.png" style="position: absolute;width: 1.2rem;left: 0.9rem;bottom: 0;"/>
+	</div>
+		<div id="huodongxize" style="margin-top:0.4rem;font-family: fangzhengyinlian;font-size: 0.25rem;color: white;letter-spacing:0.04rem;">活动细则</div>
+	</div>
+	
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+	<script src="js/vendor/fastclick.js"></script>
+	<script src="js/vendor/axios.min.js"></script>
+	<script src="js/vendor/es6-promise-auto.js"></script>
+	<script src="js/webapi.js?v=1.1.0"></script>
+	<script src="js/move.min.js"></script>
+	<script type="text/javascript">
+		FastClick.attach(document.body);
+		//配置分享地址
+		app.commonShare(location.href, '中秋送祝福，画个月亮比比看~', '听说月亮画的圆，这个中秋会更圆满哦！', 'http://one.dydigit.com/hnjh/index.html', 'http://one.dydigit.com/hnjh/img/xiaoyueliang.jpg');
+		document.getElementById('huodongxize').addEventListener('click', function(){
+			document.getElementById("mask").classList.remove("display-hidden");
+			document.getElementById("guize").classList.remove("display-hidden");
+   		});
+   		document.getElementById('guanbi').addEventListener('click', function(){
+			document.getElementById("mask").classList.add("display-hidden");
+			document.getElementById("guize").classList.add("display-hidden");
+   		});
+   		document.getElementById('tuzi').addEventListener('click', function(){
+			window.location.href = './huaban.html?v=1.1.0';
+	    });
+	    document.getElementById('oktext').addEventListener('click', function(){
+			window.location.href = './huaban.html?v=1.1.0';
+	    });
+//	    document.getElementById('shoushi').addEventListener('click', function(){
+//			window.location.href = './huaban.html?v=1.1.0';
+//	    });
+	    addEventListener('DOMContentLoaded', function(){
+	    		//diguidiaoyong();
+	    		//setInterval(shoushidonghua, 2000);
+	    		 //调用这个接口
+	    		//getVisitCounts();
+      	}, false);
+      	
+      	var intervalTuzi = null;
+      	var intervalShouzhi = null;
+      	var backToShow = false;
+      	//循环动画
+      	function diguidiaoyong(){
+      		var leftoffset = document.documentElement.clientWidth/850*100*7; 
+	    		var leftoffset2 = document.documentElement.clientWidth/850*100*1.4; 
+	    		console.log('leftoffset='+leftoffset);
+	        move('#tuziimg')
+	          .set('left', leftoffset+'px')
+	          .duration('2s')
+	          .then()
+		          .scale(-1, 1)
+		          .then()
+			          .set('left', leftoffset2+'px')
+			          .duration('2s')
+			          .then()
+			          	  .scale(-1, 1)
+			          	  .then(diguidiaoyong)
+			          	  .pop()
+			          .pop()
+			       .pop()
+	          .end();
+      	}
+      	
+      	function shoushidonghua(){
+      		var leftoffset = document.documentElement.clientWidth/850*100*0.5; 
+	    		var leftoffset2 = 0-(document.documentElement.clientWidth/850*100*0.8); 
+	    		var leftoffset3 = document.documentElement.clientWidth/850*100*0.2;
+	    		console.log('leftoffset2='+leftoffset2);
+	        move('#shoushi')
+	          .set('bottom', leftoffset+'px')
+	          .set('margin-left', leftoffset2+'px')
+	          .duration('1s')
+	          .then()
+			  	  .set('bottom', 0)
+		          .set('margin-left', leftoffset3+'px')
+		          .duration('1s')
+		      .pop()
+	          .end();
+      	}
+      	
+      	document.addEventListener("WeixinJSBridgeReady", function () { 
+	        document.getElementById('audio_bgm').play(); 
+	    }, false);
+	    
+      	window.addEventListener('pageshow', function () {
+      		if(backToShow){
+      			location.reload();
+      		}
+//    		if(intervalTuzi != null){
+//    			clearInterval(intervalTuzi);
+//    			intervalTuzi = null;
+//    		}
+//    		if(intervalShouzhi != null){
+//    			clearInterval(intervalShouzhi);
+//    			intervalShouzhi = null;
+//    		}
+//    		diguidiaoyong();
+//	        intervalTuzi = setInterval(diguidiaoyong, 6000);
+//	    		intervalShouzhi = setInterval(shoushidonghua, 2000);
+	    }, false);
+	    
+	    window.addEventListener('pagehide', function () {
+	    		backToShow = true;
+//    		if(intervalTuzi != null){
+//    			clearInterval(intervalTuzi);
+//    			intervalTuzi = null;
+//    		}
+//    		if(intervalShouzhi != null){
+//    			clearInterval(intervalShouzhi);
+//    			intervalShouzhi = null;
+//    		}
+	    }, false);
+	    
+	    //获取访问量的接口
+	    function getVisitCounts(){
+			yyoyu.webapi.subscribe.getVisitCounts(function(data) {
+				console.log('getVisitCounts='+JSON.stringify(data));
+				if(data.code == 200){
+					document.getElementById('people_count').innerText = data.data.counts;
+				}else{
+					app.showToast(data.msg);
+				}
+			}, function(xhr, type, errorThrown) {
+				console.log('error');
+			});
+	   }
+      	
+	</script>
+</body>
+</html>

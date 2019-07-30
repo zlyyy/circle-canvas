@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="Cache-Control" content="no-cache,no-store,must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <title>画板</title>
+    <script src="js/app.js?v=1.1.0"></script>
+    <style>
+    	.display-hidden {
+	  display: none !important;
+	}
+    	.yan{
+    		width: 0.5rem;
+    		height: 0.5rem;
+    	}
+    	.yan.active{
+    		width: 0.7rem;
+    		height: 0.7rem;
+    	}
+    </style>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body style="background-image: url(img/hnjh_bg2.png);background-size: 100% 100%;">
+	<div id="mask" class="display-hidden" style="position: absolute;max-width: 850px;top: 0;bottom: 0;width: 100%;opacity: 0.3;background-color: black;z-index: 997;"></div>
+	<div style="padding-top: 0.4rem;position: relative;">
+	<div style="text-align: center;width: 1.5rem;height: 1.5rem;position: relative;left: 0.9rem;display: inline-block;">
+		<img src="img/hnjh_yanliao.png" style="width: 1.5rem;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);position: absolute;left: 0;"/>
+	</div>
+	
+	<div style="position: absolute; top:0.9rem;left:2.6rem;height: 1rem;line-height: 1rem;">
+		<img src="img/yanse01.png" id="red" class="yan active" style="float: left;"></img>
+		<img src="img/yanse02.png" id="blue" class="yan" style="float: left;margin-left: 0.1rem;"></img>
+		<img src="img/yanse03.png" id="green" class="yan" style="float: left;margin-left: 0.1rem;"></img>
+		<img src="img/yanse04.png" id="yellow" class="yan" style="float: left;margin-left: 0.1rem;"></img>
+		<img src="img/yanse05.png" id="purple" class="yan" style="float: left;margin-left: 0.1rem;"></img>
+	</div>
+	<div id=clear  style="text-align: center;width: 1.5rem;height: 1.5rem;position: absolute;top: 0.4rem; right:0.9rem;">
+		<img src="img/hnjh_ca.png" style="width: 1.5rem;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);position: absolute;left: 0;"/>
+	</div>
+	</div>
+	<div>
+		<div style="font-family:fangzhengyinlian;display: inline-block;width: 1.2rem;color: white;font-size: 0.2rem;text-align: center;width: 1.5rem;margin-left: 0.9rem;margin-top: 0.2rem;">选择颜料</div>
+		<div style="font-family:fangzhengyinlian;display: inline-block;width: 1.2rem;color: white;font-size: 0.2rem;text-align: center;width: 1.5rem;margin-right: 0.9rem;float: right;margin-top: 0.2rem;">一键重画</div>
+	</div>
+	<div style="position: absolute;top:1.7rem;padding: 0 1rem;width: 100%;box-sizing: border-box;height: 2.6rem;">
+		<div style="left: 0.9rem;right: 0.9rem; height: 2.3rem;position: absolute;text-align: center;">
+			<img src="img/hnjh_huanban_top.png" style="height: 2.3rem;"/>
+		</div>
+	</div>
+	<div style="position: absolute;top:4rem;padding: 0 1rem;width: 100%;box-sizing: border-box;height: 7rem;">
+		<div style="left: 1rem;right: 1rem; height: 7rem;position: absolute;">
+			<img src="img/hnjh_huaban.png" style="width: 100%; height: 7rem;"/>
+		</div>
+		<div style="left: 1rem;right: 1rem; height: 7rem;position: absolute;">
+			<canvas id="xxx" style="width: 100%;height: 100%;"></canvas>
+		</div>
+	</div>
+	<div style="position: absolute;top:11rem;bottom: 0;padding: 0 1rem;width: 100%;box-sizing: border-box;overflow: hidden;">
+		<div style="left: 0.9rem;right: 0.9rem;position: absolute;height: 100%;">
+			<img src="img/hnjh_huaban_bottom.png" style="width: 100%;height: 100%;"/>
+		</div>
+	</div>
+	<div style="position: fixed;bottom: 0.7rem;width: 100%;text-align: center;">
+		<img id="ok" src="img/hnjh_anniu2.png" style="width: 4.3rem;" />
+		<div id="oktext" style="font-family:fangzhengyinlian;color: white;position: absolute;font-size: 0.4rem;width: 100%;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);letter-spacing:0.04rem;">画好了</div>
+	</div>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+	<script src="js/vendor/fastclick.js"></script>
+	<script src="js/vendor/axios.min.js"></script>
+	<script src="js/vendor/es6-promise-auto.js"></script>
+	<script src="js/webapi.js?v=1.1.0"></script>
+	<script src="js/huaban.js?v=1.1.0"></script>
+</body>
+</html>
